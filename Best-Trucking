@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Deep Trucking Solutions Inc.</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: 'Poppins', sans-serif; color: #1a1a1a; background: #f4f8f4; }
+    header { background: linear-gradient(135deg, #0b3d0b, #146b14); color: white; padding: 20px 60px; position: sticky; top: 0; z-index: 1000; }
+    .logo-wrap { display: flex; flex-direction: column; }
+    .logo { font-size: 40px; font-weight: 700; color: #7CFC00; letter-spacing: 2px; }
+    .slogan { font-size: 14px; opacity: 0.9; margin-top: 4px; }
+    nav { margin-top: 15px; }
+    nav a { color: white; margin-right: 25px; text-decoration: none; font-weight: 500; font-size: 14px; }
+    nav a:hover { opacity: 0.8; }
+    .hero { background: linear-gradient(rgba(11,61,11,0.8), rgba(11,61,11,0.8)), url('https://images.unsplash.com/photo-1519003722824-194d4455a60c') center/cover no-repeat; color: white; text-align: center; padding: 150px 20px; }
+    .hero h1 { font-size: 48px; margin-bottom: 15px; }
+    .hero p { font-size: 20px; max-width: 700px; margin: auto; }
+    .btn { display: inline-block; margin-top: 30px; background: #7CFC00; color: #0b3d0b; padding: 14px 30px; border-radius: 30px; text-decoration: none; font-weight: 700; }
+    section { padding: 90px 60px; }
+    h2 { text-align: center; font-size: 34px; margin-bottom: 20px; color: #0b3d0b; }
+    .section-intro { text-align: center; max-width: 750px; margin: 0 auto 50px; color: #555; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 30px; max-width: 1100px; margin: auto; }
+    .card { background: white; padding: 30px; border-radius: 14px; box-shadow: 0 15px 35px rgba(0,0,0,0.08); }
+    .card h3 { margin-top: 0; color: #146b14; }
+    .alt { background: #ffffff; }
+    .contact-box, form { background: white; padding: 40px; border-radius: 12px; max-width: 800px; margin: 30px auto; box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
+    input, select, textarea { width: 100%; padding: 12px; margin-top: 10px; margin-bottom: 20px; border-radius: 8px; border: 1px solid #ccc; font-family: inherit; }
+    label { font-weight: 600; color: #0b3d0b; }
+    button { background: #146b14; color: white; padding: 14px 25px; border: none; border-radius: 25px; font-weight: 600; cursor: pointer; }
+    .stats { display: flex; justify-content: center; gap: 60px; flex-wrap: wrap; margin-top: 40px; }
+    .stat { text-align: center; }
+    .stat h3 { font-size: 38px; margin: 0; color: #146b14; }
+    .testimonials { max-width: 1000px; margin: auto; display: grid; gap: 30px; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
+    .testimonial { background: white; padding: 25px; border-radius: 12px; box-shadow: 0 10px 25px rgba(0,0,0,0.08); font-style: italic; }
+    footer { background: #0b3d0b; color: white; text-align: center; padding: 50px 20px; }
+    @media(max-width:768px){ section{padding:70px 20px;} .hero h1{font-size:32px;} }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo-wrap">
+    <!-- Replace src with your real logo file when ready -->
+    <!-- <img src="logo.png" alt="Deep Trucking Solutions Logo" style="height:60px; margin-bottom:5px;"> -->
+    <div class="logo">DEEP</div>
+    <div class="slogan">Moving the world one shipment at a time</div>
+  </div>
+  <nav>
+    <a href="#drivers">Drivers</a>
+    <a href="#dispatch">Dispatch</a>
+    <a href="#reefer">Reefer Rentals</a>
+    <a href="#fuel">Fuel Cards</a>
+    <a href="#why">Why Us</a>
+    <a href="#forms">Sign Up</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>Deep Trucking Solutions Inc.</h1>
+  <p>Empowering drivers, supporting owner-operators, and delivering industry-leading trucking solutions nationwide.</p>
+  <a href="#forms" class="btn">Join Our Network</a>
+</section>
+
+<section id="why" class="alt">
+  <h2>Why Choose Deep Trucking Solutions?</h2>
+  <div class="stats">
+    <div class="stat"><h3>24/7</h3><p>Dispatch Support</p></div>
+    <div class="stat"><h3>Nationwide</h3><p>Coverage</p></div>
+    <div class="stat"><h3>Top Rates</h3><p>Load Negotiation</p></div>
+  </div>
+</section>
+
+<section id="drivers">
+  <h2>Professional Drivers</h2>
+  <p class="section-intro">We partner with skilled, safety-focused drivers who keep freight moving efficiently across the country.</p>
+  <div class="grid">
+    <div class="card"><h3>Safety Focused</h3><p>Strict compliance and safety standards on every load.</p></div>
+    <div class="card"><h3>Experienced</h3><p>Professional long-haul and regional drivers.</p></div>
+    <div class="card"><h3>Reliable</h3><p>On-time service and professional communication.</p></div>
+  </div>
+</section>
+
+<section id="dispatch" class="alt">
+  <h2>Dispatch Services</h2>
+  <p class="section-intro">We handle the logistics so you can focus on driving and earning.</p>
+  <div class="grid">
+    <div class="card"><h3>Top Paying Loads</h3><p>We negotiate strong rates to maximize revenue.</p></div>
+    <div class="card"><h3>24/7 Support</h3><p>Always available when drivers need assistance.</p></div>
+    <div class="card"><h3>Paperwork Handled</h3><p>Broker communication and documentation managed.</p></div>
+  </div>
+</section>
+
+<section id="reefer">
+  <h2>Reefer Trailers for Rent</h2>
+  <p class="section-intro">Reliable refrigerated trailers ready for temperature-sensitive freight.</p>
+  <div class="grid">
+    <div class="card"><h3>Road‑Ready Units</h3><p>Well-maintained and inspected equipment.</p></div>
+    <div class="card"><h3>Flexible Terms</h3><p>Short and long-term rental options available.</p></div>
+    <div class="card"><h3>Perfect for Fresh & Frozen</h3><p>Ideal for produce, dairy, and frozen freight.</p></div>
+  </div>
+</section>
+
+<section id="fuel" class="alt">
+  <h2>Fuel Card Program</h2>
+  <p class="section-intro">Helping drivers and fleets save big at fuel stops nationwide.</p>
+  <div class="grid">
+    <div class="card"><h3>Nationwide Coverage</h3><p>Accepted at major truck stops.</p></div>
+    <div class="card"><h3>Major Discounts</h3><p>Reduce fuel costs significantly.</p></div>
+    <div class="card"><h3>Easy Tracking</h3><p>Monitor and manage fuel expenses.</p></div>
+  </div>
+</section>
+
+<section class="alt">
+  <h2>What Drivers Say</h2>
+  <div class="testimonials">
+    <div class="testimonial">“Deep’s dispatch team keeps me loaded and earning. Best support I’ve worked with.”</div>
+    <div class="testimonial">“Fuel savings alone make a huge difference every month. Great company to partner with.”</div>
+    <div class="testimonial">“Professional, reliable, and they actually answer the phone 24/7.”</div>
+  </div>
+</section>
+
+<section id="forms">
+  <h2>Sign-Up Forms</h2>
+
+  <!-- Replace action URL with your Formspree or backend endpoint to receive emails -->
+  <form action="https://formspree.io/f/yourformid" method="POST">
+    <h3>Driver Application</h3>
+    <label>Full Name</label><input type="text" name="name" required>
+    <label>Phone Number</label><input type="tel" name="phone" required>
+    <label>Email</label><input type="email" name="email" required>
+    <label>CDL Experience (Years)</label><input type="number" name="experience" required>
+    <label>Preferred Routes</label><input type="text" name="routes">
+    <button type="submit">Apply as Driver</button>
+  </form>
+
+  <form action="https://formspree.io/f/yourformid" method="POST">
+    <h3>Owner Operator Sign-Up</h3>
+    <label>Full Name / Company</label><input type="text" name="company" required>
+    <label>Phone Number</label><input type="tel" name="phone" required>
+    <label>Email</label><input type="email" name="email" required>
+    <label>Truck Type</label><input type="text" name="truck">
+    <label>Operating States</label><input type="text" name="states">
+    <button type="submit">Register as Owner Operator</button>
+  </form>
+
+  <form action="https://formspree.io/f/yourformid" method="POST">
+    <h3>Fuel Card Program Sign-Up</h3>
+    <label>Company / Driver Name</label><input type="text" name="name" required>
+    <label>Phone Number</label><input type="tel" name="phone" required>
+    <label>Email</label><input type="email" name="email" required>
+    <label>Number of Trucks</label><input type="number" name="trucks">
+    <button type="submit">Request Fuel Card</button>
+  </form>
+
+  <form action="https://formspree.io/f/yourformid" method="POST">
+    <h3>Reefer Trailer Rental Request</h3>
+    <label>Name / Company</label><input type="text" name="name" required>
+    <label>Phone Number</label><input type="tel" name="phone" required>
+    <label>Email</label><input type="email" name="email" required>
+    <label>Rental Duration</label><input type="text" name="duration">
+    <label>Pickup Location</label><input type="text" name="location">
+    <button type="submit">Request Trailer</button>
+  </form>
+</section>
+
+<section id="contact" class="alt">
+  <h2>Contact Us</h2>
+  <div class="contact-box">
+    <p><strong>Phone:</strong> 559‑513‑5279</p>
+    <p><strong>Email:</strong> Simrandeep741@gmail.com</p>
+    <p>We look forward to working with you.</p>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Deep Trucking Solutions Inc. | Moving the world one shipment at a time</p>
+</footer>
+
+</body>
+</html>
