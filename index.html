@@ -10,7 +10,6 @@
 body{font-family:'Poppins',sans-serif;background:#0a0c10;color:#eee;overflow-x:hidden}
 :root{--gold:#d4af37;--dark:#0a0c10;--panel:#12151c;--soft:#1a1f27}
 
-/* PRELOADER */
 #loader{position:fixed;inset:0;background:#0a0c10;display:flex;align-items:center;justify-content:center;z-index:9999;flex-direction:column}
 .loader-logo{font-family:'Playfair Display',serif;font-size:42px;letter-spacing:6px;background:linear-gradient(90deg,#d4af37,#fff,#d4af37);-webkit-background-clip:text;color:transparent;animation:shine 2s infinite}
 @keyframes shine{0%{background-position:-200px}100%{background-position:200px}}
@@ -98,19 +97,81 @@ footer{background:#0b0d12;text-align:center;padding:60px 20px;border-top:1px sol
 </div>
 </section>
 
-<section id="forms" class="alt">
-<h2>Apply Now</h2>
+<section id="dispatch" class="alt">
+<h2>Luxury Dispatch Services</h2>
+<p class="section-intro">24/7 high-level coordination and premium rate negotiation.</p>
+<div class="grid">
+<div class="card"><h3>Top Paying Loads</h3><p>We maximize every mile.</p></div>
+<div class="card"><h3>Dedicated Support</h3><p>Professional dispatchers at your service.</p></div>
+<div class="card"><h3>Paperwork Handled</h3><p>You drive, we manage the rest.</p></div>
+</div>
+</section>
+
+<section id="reefer">
+<h2>Reefer Trailer Rentals</h2>
+<p class="section-intro">High-performance refrigerated trailers for sensitive freight.</p>
+<div class="grid">
+<div class="card"><h3>Precision Cooling</h3><p>Reliable temperature control.</p></div>
+<div class="card"><h3>Flexible Terms</h3><p>Daily, weekly, and monthly options.</p></div>
+<div class="card"><h3>Ready to Roll</h3><p>Maintained and inspected.</p></div>
+</div>
+</section>
+
+<section id="fuel" class="alt">
+<h2>Exclusive Fuel Program</h2>
+<p class="section-intro">Access nationwide discounts and smarter fuel management.</p>
+<div class="grid">
+<div class="card"><h3>Major Stops Accepted</h3><p>Wide coverage across routes.</p></div>
+<div class="card"><h3>Lower Costs</h3><p>Serious savings on every gallon.</p></div>
+<div class="card"><h3>Easy Tracking</h3><p>Control spending efficiently.</p></div>
+</div>
+</section>
+
+<section id="forms">
+<h2>Apply & Get Started</h2>
+
 <form action="https://formspree.io/f/xgolvlqg" method="POST">
 <h3>Driver Application</h3>
 <label>Full Name</label><input type="text" name="name" required>
 <label>Phone</label><input type="tel" name="phone" required>
 <label>Email</label><input type="email" name="email" required>
+<label>Experience (Years)</label><input type="number" name="experience" required>
 <input type="hidden" name="_subject" value="Driver Application">
 <button type="submit">Apply Now</button>
 </form>
+
+<form action="https://formspree.io/f/xgolvlqg" method="POST">
+<h3>Owner Operator Sign-Up</h3>
+<label>Name / Company</label><input type="text" name="company" required>
+<label>Phone</label><input type="tel" name="phone" required>
+<label>Email</label><input type="email" name="email" required>
+<label>Truck Type</label><input type="text" name="truck">
+<input type="hidden" name="_subject" value="Owner Operator Signup">
+<button type="submit">Join as Owner Operator</button>
+</form>
+
+<form action="https://formspree.io/f/xgolvlqg" method="POST">
+<h3>Fuel Card Request</h3>
+<label>Name / Company</label><input type="text" name="name" required>
+<label>Phone</label><input type="tel" name="phone" required>
+<label>Email</label><input type="email" name="email" required>
+<label>Number of Trucks</label><input type="number" name="trucks">
+<input type="hidden" name="_subject" value="Fuel Card Signup">
+<button type="submit">Request Fuel Card</button>
+</form>
+
+<form action="https://formspree.io/f/xgolvlqg" method="POST">
+<h3>Reefer Trailer Rental</h3>
+<label>Name / Company</label><input type="text" name="name" required>
+<label>Phone</label><input type="tel" name="phone" required>
+<label>Email</label><input type="email" name="email" required>
+<label>Rental Duration</label><input type="text" name="duration">
+<input type="hidden" name="_subject" value="Reefer Rental Request">
+<button type="submit">Request Trailer</button>
+</form>
 </section>
 
-<section id="contact">
+<section id="contact" class="alt">
 <h2>Contact Us</h2>
 <p style="text-align:center;font-size:18px;line-height:1.8;color:#ddd">Phone: 559-513-5279<br>Email: Simrandeep741@gmail.com</p>
 </section>
@@ -119,13 +180,10 @@ footer{background:#0b0d12;text-align:center;padding:60px 20px;border-top:1px sol
 
 <script>
 window.addEventListener('load',()=>{document.getElementById('loader').style.display='none'})
-
 const observer=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible')}})},{threshold:0.2})
 document.querySelectorAll('.card').forEach(card=>observer.observe(card))
-
 for(let i=0;i<30;i++){let p=document.createElement('div');p.className='particle';p.style.left=Math.random()*100+'%';p.style.top=Math.random()*100+'%';p.style.animationDuration=(8+Math.random()*6)+'s';document.body.appendChild(p)}
 </script>
 
 </body>
 </html>
-
