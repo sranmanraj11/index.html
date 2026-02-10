@@ -8,14 +8,14 @@
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
 body{font-family:'Poppins',sans-serif;background:#0a0c10;color:#eee;overflow-x:hidden}
-:root{--gold:#d4af37;--dark:#0a0c10;--panel:#12151c;--soft:#1a1f27}
+:root{--gold:#16a34a;--dark:#0a0c10;--panel:#12151c;--soft:#1a1f27}
 
 #loader{position:fixed;inset:0;background:#0a0c10;display:flex;align-items:center;justify-content:center;z-index:9999;flex-direction:column}
-.loader-logo{font-family:'Playfair Display',serif;font-size:42px;letter-spacing:6px;background:linear-gradient(90deg,#d4af37,#fff,#d4af37);-webkit-background-clip:text;color:transparent;animation:shine 2s infinite}
+.loader-logo{font-family:'Playfair Display',serif;font-size:42px;letter-spacing:6px;background:linear-gradient(90deg,#16a34a,#fff,#16a34a);-webkit-background-clip:text;color:transparent;animation:shine 2s infinite}
 @keyframes shine{0%{background-position:-200px}100%{background-position:200px}}
 
-header{position:fixed;width:100%;top:0;z-index:1000;padding:25px 70px;background:rgba(10,12,16,0.85);backdrop-filter:blur(12px);border-bottom:1px solid rgba(212,175,55,0.2)}
-.logo{font-family:'Playfair Display',serif;font-size:48px;background:linear-gradient(90deg,#d4af37,#fff,#d4af37);-webkit-background-clip:text;color:transparent;letter-spacing:4px}
+header{position:fixed;width:100%;top:0;z-index:1000;padding:25px 70px;background:rgba(10,12,16,0.85);backdrop-filter:blur(12px);border-bottom:1px solid rgba(22,163,74,0.2)}
+.logo{font-family:'Playfair Display',serif;font-size:48px;background:linear-gradient(90deg,#16a34a,#fff,#16a34a);-webkit-background-clip:text;color:transparent;letter-spacing:4px}
 .slogan{font-size:12px;color:#ccc;letter-spacing:2px;margin-top:4px}
 nav{margin-top:12px}
 nav a{color:#eee;margin-right:26px;text-decoration:none;font-size:14px;letter-spacing:1px;position:relative}
@@ -24,12 +24,12 @@ nav a:hover:after{width:100%}
 
 .hero{position:relative;height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;overflow:hidden}
 .hero video{position:absolute;top:50%;left:50%;min-width:100%;min-height:100%;transform:translate(-50%,-50%);z-index:-2;filter:brightness(40%)}
-.hero:after{content:"";position:absolute;inset:0;background:radial-gradient(circle at top,rgba(212,175,55,0.25),transparent 50%);z-index:-1}
+.hero:after{content:"";position:absolute;inset:0;background:radial-gradient(circle at top,rgba(22,163,74,0.25),transparent 50%);z-index:-1}
 .hero h1{font-family:'Playfair Display',serif;font-size:64px;max-width:900px}
 .hero p{margin-top:20px;font-size:20px;color:#ddd;max-width:700px}
 
 .btn,button{background:var(--gold);color:#111;padding:16px 40px;border-radius:50px;text-decoration:none;font-weight:600;letter-spacing:1px;border:none;cursor:pointer;transition:0.4s;position:relative;overflow:hidden}
-.btn:hover,button:hover{transform:translateY(-3px);box-shadow:0 0 25px rgba(212,175,55,0.9),0 0 60px rgba(212,175,55,0.6)}
+.btn:hover,button:hover{transform:translateY(-3px);box-shadow:0 0 25px rgba(22,163,74,0.9),0 0 60px rgba(22,163,74,0.6)}
 .btn:before,button:before{content:"";position:absolute;top:0;left:-100%;width:100%;height:100%;background:linear-gradient(120deg,transparent,rgba(255,255,255,0.6),transparent);transition:0.6s}
 .btn:hover:before,button:hover:before{left:100%}
 
@@ -38,23 +38,19 @@ h2{font-family:'Playfair Display',serif;font-size:42px;text-align:center;margin-
 .section-intro{text-align:center;color:#bbb;max-width:700px;margin:0 auto 60px}
 
 .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:40px;max-width:1200px;margin:auto}
-.card{background:rgba(255,255,255,0.04);border:1px solid rgba(212,175,55,0.2);border-radius:18px;padding:40px;backdrop-filter:blur(12px);transition:0.6s;opacity:0;transform:translateY(40px)}
+.card{background:rgba(255,255,255,0.04);border:1px solid rgba(22,163,74,0.2);border-radius:18px;padding:40px;backdrop-filter:blur(12px);transition:0.6s;opacity:0;transform:translateY(40px)}
 .card.visible{opacity:1;transform:translateY(0)}
-.card:hover{box-shadow:0 0 30px rgba(212,175,55,0.15)}
+.card:hover{box-shadow:0 0 30px rgba(22,163,74,0.15)}
 .card h3{color:#fff;margin-bottom:10px}
 .card p{color:#ccc}
 .alt{background:linear-gradient(to right,#0d1016,#121720)}
 
-.stats{display:flex;justify-content:center;gap:100px;flex-wrap:wrap;margin-top:40px}
-.stat{text-align:center}
-.stat h3{font-size:48px;color:var(--gold);font-family:'Playfair Display',serif}
-
-form{background:rgba(255,255,255,0.04);border:1px solid rgba(212,175,55,0.25);backdrop-filter:blur(12px);padding:45px;border-radius:18px;max-width:850px;margin:40px auto}
+form{background:rgba(255,255,255,0.04);border:1px solid rgba(22,163,74,0.25);backdrop-filter:blur(12px);padding:45px;border-radius:18px;max-width:850px;margin:40px auto}
 form h3{font-family:'Playfair Display',serif;color:var(--gold);margin-bottom:20px}
 label{color:#ddd;font-size:14px}
 input,textarea{width:100%;padding:14px;margin:10px 0 22px;border-radius:8px;border:1px solid #333;background:#0f1115;color:#fff}
 
-footer{background:#0b0d12;text-align:center;padding:60px 20px;border-top:1px solid rgba(212,175,55,0.2);color:#aaa}
+footer{background:#0b0d12;text-align:center;padding:60px 20px;border-top:1px solid rgba(22,163,74,0.2);color:#aaa}
 
 .particle{position:absolute;width:4px;height:4px;background:var(--gold);border-radius:50%;opacity:0.4;animation:float 12s infinite ease-in-out}
 @keyframes float{0%{transform:translateY(0)}50%{transform:translateY(-40px)}100%{transform:translateY(0)}}
@@ -63,14 +59,14 @@ footer{background:#0b0d12;text-align:center;padding:60px 20px;border-top:1px sol
 </head>
 <body>
 
-<div id="loader"><div class="loader-logo">DEEP</div><p style="color:#888;margin-top:10px;letter-spacing:2px">Loading Excellence</p></div>
+<div id="loader"><div class="loader-logo">DEEP</div><p style="color:#888;margin-top:10px;letter-spacing:2px">Loading Power</p></div>
 
 <header>
 <div class="logo">DEEP</div>
 <div class="slogan">Moving the world one shipment at a time</div>
 <nav>
+<a href="#fleet">Our Fleet</a>
 <a href="#drivers">Drivers</a>
-<a href="#dispatch">Dispatch</a>
 <a href="#reefer">Reefer Rentals</a>
 <a href="#fuel">Fuel Cards</a>
 <a href="#forms">Sign Up</a>
@@ -82,53 +78,53 @@ footer{background:#0b0d12;text-align:center;padding:60px 20px;border-top:1px sol
 <video autoplay muted loop playsinline>
   <source src="https://cdn.coverr.co/videos/coverr-truck-driving-on-the-road-9716/1080p.mp4" type="video/mp4">
 </video>
-<h1>Where Elite Carriers Move Freight With Power</h1>
-<p>Luxury-level dispatch, refrigerated equipment, and fuel savings built for serious professionals.</p>
-<a href="#forms" class="btn">Join Deep</a>
+<h1>Premium Freight Carriers. Nationwide Reach.</h1>
+<p>Deep Trucking Solutions Inc. is a professional trucking carrier delivering reliable freight transportation with elite equipment and experienced drivers.</p>
+<a href="#forms" class="btn">Work With Us</a>
 </section>
 
-<section id="drivers">
-<h2>Professional Drivers</h2>
-<p class="section-intro">We partner with experienced operators who expect top-tier treatment and steady opportunities.</p>
+<section id="fleet">
+<h2>Our Fleet</h2>
+<p class="section-intro">We operate modern, well‑maintained equipment to ensure safe, efficient, and on‑time deliveries across the country.</p>
 <div class="grid">
-<div class="card"><h3>Elite Standards</h3><p>Safety and compliance come first.</p></div>
-<div class="card"><h3>Respect & Support</h3><p>We treat drivers like partners.</p></div>
-<div class="card"><h3>Consistent Freight</h3><p>Strong networks keep wheels turning.</p></div>
+<div class="card"><h3>Power Units</h3><p>Late‑model trucks built for performance, safety, and long‑haul reliability.</p></div>
+<div class="card"><h3>Refrigerated Trailers</h3><p>Temperature‑controlled equipment for sensitive and high‑value freight.</p></div>
+<div class="card"><h3>Nationwide Coverage</h3><p>Serving major lanes with dependable transit times.</p></div>
 </div>
 </section>
 
-<section id="dispatch" class="alt">
-<h2>Luxury Dispatch Services</h2>
-<p class="section-intro">24/7 high-level coordination and premium rate negotiation.</p>
+<section id="drivers" class="alt">
+<h2>Drive With Deep</h2>
+<p class="section-intro">We hire professional drivers who want steady miles, strong support, and a company that values their work.</p>
 <div class="grid">
-<div class="card"><h3>Top Paying Loads</h3><p>We maximize every mile.</p></div>
-<div class="card"><h3>Dedicated Support</h3><p>Professional dispatchers at your service.</p></div>
-<div class="card"><h3>Paperwork Handled</h3><p>You drive, we manage the rest.</p></div>
+<div class="card"><h3>Consistent Miles</h3><p>Reliable freight to keep you moving and earning.</p></div>
+<div class="card"><h3>Respect & Support</h3><p>A team that treats drivers like professionals.</p></div>
+<div class="card"><h3>Well‑Maintained Equipment</h3><p>Safe, modern trucks and trailers.</p></div>
 </div>
 </section>
 
 <section id="reefer">
 <h2>Reefer Trailer Rentals</h2>
-<p class="section-intro">High-performance refrigerated trailers for sensitive freight.</p>
+<p class="section-intro">We offer refrigerated trailers for carriers and operators needing dependable temperature‑controlled equipment.</p>
 <div class="grid">
-<div class="card"><h3>Precision Cooling</h3><p>Reliable temperature control.</p></div>
-<div class="card"><h3>Flexible Terms</h3><p>Daily, weekly, and monthly options.</p></div>
-<div class="card"><h3>Ready to Roll</h3><p>Maintained and inspected.</p></div>
+<div class="card"><h3>Precision Cooling</h3><p>Reliable temperature control for sensitive loads.</p></div>
+<div class="card"><h3>Flexible Terms</h3><p>Daily, weekly, and monthly rental options.</p></div>
+<div class="card"><h3>Road‑Ready Equipment</h3><p>Fully inspected and maintained units.</p></div>
 </div>
 </section>
 
 <section id="fuel" class="alt">
-<h2>Exclusive Fuel Program</h2>
-<p class="section-intro">Access nationwide discounts and smarter fuel management.</p>
+<h2>Fuel Card Program</h2>
+<p class="section-intro">Our fuel program helps carriers and owner‑operators save money with access to nationwide discounts.</p>
 <div class="grid">
-<div class="card"><h3>Major Stops Accepted</h3><p>Wide coverage across routes.</p></div>
-<div class="card"><h3>Lower Costs</h3><p>Serious savings on every gallon.</p></div>
-<div class="card"><h3>Easy Tracking</h3><p>Control spending efficiently.</p></div>
+<div class="card"><h3>Major Stops Accepted</h3><p>Use your card at leading truck stops across the country.</p></div>
+<div class="card"><h3>Lower Fuel Costs</h3><p>Competitive discounts that improve your bottom line.</p></div>
+<div class="card"><h3>Simple Management</h3><p>Track fuel usage and spending with ease.</p></div>
 </div>
 </section>
 
 <section id="forms">
-<h2>Apply & Get Started</h2>
+<h2>Applications & Requests</h2>
 
 <form action="https://formspree.io/f/xgolvlqg" method="POST">
 <h3>Driver Application</h3>
@@ -137,17 +133,17 @@ footer{background:#0b0d12;text-align:center;padding:60px 20px;border-top:1px sol
 <label>Email</label><input type="email" name="email" required>
 <label>Experience (Years)</label><input type="number" name="experience" required>
 <input type="hidden" name="_subject" value="Driver Application">
-<button type="submit">Apply Now</button>
+<button type="submit">Apply as Driver</button>
 </form>
 
 <form action="https://formspree.io/f/xgolvlqg" method="POST">
-<h3>Owner Operator Sign-Up</h3>
+<h3>Owner Operator Partnership</h3>
 <label>Name / Company</label><input type="text" name="company" required>
 <label>Phone</label><input type="tel" name="phone" required>
 <label>Email</label><input type="email" name="email" required>
 <label>Truck Type</label><input type="text" name="truck">
 <input type="hidden" name="_subject" value="Owner Operator Signup">
-<button type="submit">Join as Owner Operator</button>
+<button type="submit">Partner With Us</button>
 </form>
 
 <form action="https://formspree.io/f/xgolvlqg" method="POST">
@@ -161,7 +157,7 @@ footer{background:#0b0d12;text-align:center;padding:60px 20px;border-top:1px sol
 </form>
 
 <form action="https://formspree.io/f/xgolvlqg" method="POST">
-<h3>Reefer Trailer Rental</h3>
+<h3>Reefer Trailer Rental Request</h3>
 <label>Name / Company</label><input type="text" name="name" required>
 <label>Phone</label><input type="tel" name="phone" required>
 <label>Email</label><input type="email" name="email" required>
@@ -171,12 +167,22 @@ footer{background:#0b0d12;text-align:center;padding:60px 20px;border-top:1px sol
 </form>
 </section>
 
-<section id="contact" class="alt">
-<h2>Contact Us</h2>
+<section id="gallery">
+<h2>Our Equipment in Action</h2>
+<p class="section-intro">A look at the type of professional equipment and operations Deep Trucking Solutions runs every day.</p>
+<div class="grid">
+  <div class="card"><img src="https://images.unsplash.com/photo-1601582589907-f92af5ed9db8?auto=format&fit=crop&w=900&q=80" style="width:100%;border-radius:12px;margin-bottom:15px"><h3>Modern Highway Tractors</h3><p>Reliable, late-model trucks built for long-haul performance.</p></div>
+  <div class="card"><img src="https://images.unsplash.com/photo-1592838064575-70ed626d3a0e?auto=format&fit=crop&w=900&q=80" style="width:100%;border-radius:12px;margin-bottom:15px"><h3>Refrigerated Trailers</h3><p>Temperature-controlled equipment for sensitive freight.</p></div>
+  <div class="card"><img src="https://images.unsplash.com/photo-1581093588401-22d4c7f0f0b1?auto=format&fit=crop&w=900&q=80" style="width:100%;border-radius:12px;margin-bottom:15px"><h3>On the Road Nationwide</h3><p>Serving major freight corridors with precision and reliability.</p></div>
+</div>
+</section>
+
+<section id="contact" class="alt"> class="alt">
+<h2>Contact Deep Trucking Solutions Inc.</h2>
 <p style="text-align:center;font-size:18px;line-height:1.8;color:#ddd">Phone: 559-513-5279<br>Email: Simrandeep741@gmail.com</p>
 </section>
 
-<footer>© 2026 Deep Trucking Solutions Inc.</footer>
+<footer>© 2026 Deep Trucking Solutions Inc. — Licensed & Insured Carrier</footer>
 
 <script>
 window.addEventListener('load',()=>{document.getElementById('loader').style.display='none'})
@@ -187,3 +193,4 @@ for(let i=0;i<30;i++){let p=document.createElement('div');p.className='particle'
 
 </body>
 </html>
+
